@@ -1,45 +1,177 @@
-<!DOCTYPE html> 
-<html lang = "nl"> 
+<html>
+    <head>
+          <meta charset="utf-8">
 
+          <title>Webmarkup taekwondo opdracht</title>
 
-<head>
-<meta charset = "utf-8" >
-<link rel="stylesheet" href="Homepage style.css" />
-</head>
-<body>
-<article id="omhulsel">
-<center>
-	<header>
-		<h1><a href="index.html"> COMPANY NAME</a></h1>
-	</header>
-</center>
-<center>
-	<p class="navigatie"><a href="Product.html" class="navi">PRODUCTS</a> <a href="http://www.blogger.com" target="_blank" class="navi">BLOG</a> <a href="Contact.html" class="navi">CONTACTS</a></p>
-	<p class="categorie">WE ARE </br> ENTERTAINMENT</p>
-</center>
-<center>
-	<img src="img/product3.jpg">
-</center>
-<center>
-	<p class="categorie">MOBILE</br>GAMES</p>
-</center>
-<center>
-	<img src="img/product8.jpg">
-</center>
-<center>
-	<p class="categorie">BOARD</br>GAMES</p>
-</center>
-<center>
-	<img src="img/product6.jpg">
-</center>
-<center>
-	<p class="categorie">CONSOLE</br>GAMES</p>
-</center>
-<center>
-	<img src="img/product9.jpg">
-</center>
-<center>
-	<p class="footer">&copy; 2018 - Melle Roffel - Inholland</p>
-</center>
-</article>
-</body>
+          <link rel="stylesheet" type="text/css" href="IndexStyle.css">
+          <meta name="author" content="Melle Roffel">
+          <meta name="description" content="Information about taekwon located in Haarlem Netherlands. And other sporting clubs in Haarlem.">
+          <meta name="keywords" content="Taekwon, Sport, Haarlem, Nederland, Vechtsport, Bewegen, Zelfverdediging, Jiu Jitsu">
+    </head>
+    
+    <body>
+        <nav>
+            <h1 class="titelPagina"><a href="#referalcontent">Main page</a></h1>
+            <h2 class="onderTitelpagina"><a href="#referalcontent">By Melle Roffel 631287</a></h2>
+        <ul id="menuBalk">
+            <li class="drie"><a href="#mainContent">Main content</a></li>
+            <li class="vier"><a href="#secondaryContent">Secondary content</a></li>
+            <li class="vijf"><a href="#sportContent">Sport content</a></li>
+            <li class="zeven"><a href="#contactContent">Contact</a></li>
+        </ul>
+        </nav>
+        
+        <article id="mainContent">
+            <!--
+            c. Use at least section, article, header, footer and p tags
+            d. Use 2 images. The images are royalty free images. -->
+            <h2 class="mainHeader">Haarlem</h2>
+                <p class="mainHeaderText">Haarlem is een stad die voor iedereen wel wat te bieden heeft. </br>
+                    In het centrum zijn veel kledingwinkels te vinden, ook van merken als Levi's , Carthart, Snipes en nog veel meer.</br>
+                    Natuurlijk kan je in Haarlem ook het Frans Hals museum bezoeken, dit is een kunst museum met verschillende exposities.</br>
+                    Op <u><a href="https://www.visithaarlem.com/nl/cultuur/musea/alle-musea" target="_blank">deze</a></u> website kunt u een lijst met alle musea in Haarlem bekijken.</br>
+                    Naast het shoppen en de musea is Haarlem ook een goede plaats voor het nachtleven,</br> je hebt hier verschillende clubs zoals : de Koning, Ruis, Murphy's en nog meer.</br>
+                    Ook telt Haarlem vele lekkere restaurants en gezellige cafés.
+                </p>
+                <img id="ImageMain" src="Afb/haarlemmainAfb.jpg">
+                
+            <footer class="footerMainText">&#9400; Melle Roffel 631287</footer>
+            
+        </article>
+        
+        <article id="secondaryContent">
+            <!-- Secondary content
+            a. Link to this content is made with an bookmark from the navigation on the
+            index.html page with an id attribute (<a href="#secondarycontent">)
+            b. The content is about “Secondary” from the chapter “URL TO CHOOSE”. F.e. tell
+            something about the neighbourhood what shops, companies or touristic
+            attractions you can find. Total: 350 words.
+            c. Use at least section, article, header, footer and p tag -->
+            <h2 class="mainHeader">De omgeving van Taekwon (Houtstraat)</h2>
+                <p class="mainHeaderText">Kleine hout ligt tegen het Haarlemmerhout aan, dit is een park waar herten leven. </br>
+                    En er bevindt zich een klein theehuis, ook is dit een plek waar veel wordt gesport. Door groepen en mensen die voor zichzelf aan het sporten zijn.</br>
+                    Naast het Haarlemmerhout , hebben we ook de tempeliersstraat in de buurt, dit is de straat waarin de bussen je kunnen ophalen of afzetten
+                    als je vanuit een andere plaats moet komen. </br>
+                    Ook heb je hier veel eettenten en een pool- / snookercentrum voor de liefhebber.
+                </p>
+                <img id="ImageMain" src="Afb/haarlemsecondAfb.jpg">
+            <footer class="footerMainText">&#9400; Melle Roffel 631287</footer>
+        </article>
+        
+        
+        <article id="sportContent">
+            <h2 class="mainHeader">Sportclubs in de omgeving.</h2>
+                <table class="sportClubsList">
+                    <tr>
+                        <th><a href="http://www.hkc-haarlem.nl/" target="_blank"><img id="clubImage" src="Afb/hkc haarlem korfbal logo.png"></a></th> <!--Korfbal-->
+                        <td class="clubInfoText">HKC Korfbal vereniging is gelegen in West-Haarlem , de korfbal vereniging telt zo een 9 teams (jeugd als volwassenen). </br>
+                            De club is meer dan alleen korfbal, het biedt ook crossfit en andere activiteiten aan. </br> </br>
+                            Voor de website klik <a href="http://www.hkc-haarlem.nl/" target="_blank"><b>hier</b></a>.
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><a href="http://rugbyclubhaarlem.nl/" target="_blank"><img id="clubImage" src="Afb/RFC haarlem logo.png"></a></th> <!--Hockey-->
+                        <td class="clubInfoText">RFC Haarlem is een van de grootste rugby clubs van Nederland, dit omdat zij een hele grote jeugd afdeling hebben.</br>
+                            Het is een club met grote ambities en een prachtig nieuw clubhuis.</br></br>
+                            Voor de website klik <a href="http://rugbyclubhaarlem.nl/" target="_blank"><b>hier</b></a>.
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><a href="https://avhaarlem.nl/" target="_blank"><img id="clubImage" src="Afb/Av haarlem.png"></a></th> <!--Atletiek-->
+                        <td class="clubInfoText">AV Haarlem de atletiek vereniging van Haarlem, deze vereniging bestaat al sinds 8 oktober 1920. En telt ruim 250 leden.</br>
+                            De club staat voor plezier in trainen en goede prestaties nastreven.</br></br>
+                            Voor de website klik <a href="https://avhaarlem.nl/" target="_blank"><b>hier</b></a>.
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><a href="https://www.tvpimmulier.nl/" target="_blank"><img id="clubImage" src="Afb/Pim Mulier.png"></a></th> <!--Tennis-->
+                        <td class="clubInfoText">Tennis vereniging Pim Mulier, is een tennisvereniging voor alle niveau's. Er is een leuk café gelegen naast de tennis velden. </br>
+                            Los van de lessen kan je altijd komen tennissen op de vrije banen.</br></br>
+                            Voor de website klik <a href="https://www.tvpimmulier.nl/" target="_blank"><b>hier</b></a>.
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><a href="https://www.kenamju.nl/" target="_blank"><img id="clubImage" src="Afb/Kenamju.png"></a></th> <!--Boksen-->
+                        <td class="clubInfoText">Kenamju is een sportclub waar je sporten als : boksen, Judo, Karate en Kickboksen kan leren</br>
+                            Het is overigens ook een sportschool van hogekwaliteit in de uitstraling als kwaliteit.</br></br>
+                            Voor de website klik <a href="https://www.kenamju.nl/" target="_blank"><b>hier</b></a>.
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><a href="https://www.konhfc.nl/" target="_blank"><img id="clubImage" src="Afb/Koninklijke HFC.png"></a></th> <!--Voetbal-->
+                        <td class="clubInfoText">koninklijke HFC is een voetbalclub waarvan het eerste team in de tweede divisie van Nederland speelt.</br>
+                            Ooit opgericht door Pim Mulier als kwajongensclub, tegenwoordig is het een moderne en ambitieuze voetbalclub.</br></br>
+                            Voor de website klik <a href="https://www.konhfc.nl/" target="_blank"><b>hier</b></a>.
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><a href="https://www.onzegezellenhonkensoftbal.nl/" target="_blank"><img id="clubImage" src="Afb/Onze Gezellen.png"></a></th> <!--Honk en softball-->
+                        <td class="clubInfoText">Onze Gezellen Honk- en Softball is een van de sporttakken van de sportvereniging Onze Gezellen.</br>
+                            De club is een van de grotere van Nederland , vanaf 2015 spelen zij in de top competitie van de KNBSB.</br></br>
+                            Voor de website klik <a href="https://www.onzegezellenhonkensoftbal.nl/" target="_blank"><b>hier</b></a>.
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><a href="https://www.hchaarlem.nl/site/Default.asp" target="_blank"><img id="clubImage" src="Afb/HC haarlem.png"></a></th> <!--Rugby-->
+                        <td class="clubInfoText">Hockeyclub Haarlem is een van de grotere hockeyclubs van Nederland, ze beschikken over 6 hockeyvelden gelegen in Haarlem-Noord. </br>
+                            De club telt maarliefst 69 jeugdteams en twaalf senioren teams.</br></br>
+                            Voor de website klik <a href="https://www.hchaarlem.nl/site/Default.asp" target="_blank"><b>hier</b></a>.
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><a href="https://www.alliance22.nl/" target="_blank"><img id="clubImage" src="Afb/SV alliance.png"></a></th> <!--Voetbal-->
+                        <td class="clubInfoText">S.V. Alliance '22 , zoals de naam al zegt is ontstaan in 1922. Alliance '22 is een amateur voetbal vereniging, </br>
+                            waarbij het voornamelijk draait om sportiviteit. Hun beste teams spelen in de 3e en 4e klassen van de KNVB.</br></br>
+                            Voor de website klik <a href="https://www.alliance22.nl/" target="_blank"><b>hier</b></a>.
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><a href="https://www.geel-wit.nl/" target="_blank"><img id="clubImage" src="Afb/SV geel wit.png"></a></th> <!--Voetbal-->
+                        <td class="clubInfoText">S.V. Geel-Wit is een voetbalclub die samenwerkt met eredivisie club AZ! De club heeft in de jare 90 een kleine dip gehad maar daar is nu niks
+                            meer van te merken. Tegenwoordig telt Geel-Wit zo een 32 jeugdteams en 8 senioren teams.
+                            De voetbalclub ligt niet ver van het centrum af en is daarom makkelijk te bereiken.</br></br>
+                            Voor de website klik <a href="https://www.geel-wit.nl/" target="_blank"><b>hier</b></a>.
+                        </td>
+                    </tr>                    
+                </table>
+            <footer class="footerMainText">&#9400; Melle Roffel 631287</footer>
+        </article>
+      
+        <article id="referalcontent">
+            <h2 class="mainHeader">Taekwon sportclub</h2>
+                <p class="mainHeaderText">
+                    Taekwon is een vechtsport vereniging gelegen in Schalkwijk (Haarlem) en Leidsevaartweg (Heemstede).
+                    Je kan er taekwondo leren en Brazilian Jiu Jitsu, er zijn heel de week door trainingen.</br>
+                    Het verschilt per leeftijd op welke dagen je training hebt. </br>
+                    Je kan ook jezelf verbeteren door het trainen van mudo,</br> deze trainingen vereisen ervaring met taekwondo,
+                    bij mudo trainingen ligt er meer focus op zelfverdediging en persoonsontwikkeling.
+                    </br>
+                    
+                    
+                </p>
+            <footer class="footerMainText">&#9400; Melle Roffel 631287</footer>
+        </article>
+        
+        <article id="contactContent">
+            <h2 class="mainHeader">Contact</h2>
+                <form action="http://witan.nl/inholland/testform.php"  target="_blank" method="post">
+                    <fieldset>
+                        <legend>Contact formulier</legend>
+                        <label class="formulierTitels">Naam</label>
+                        <input class="inputField" name="name">
+                        <label class="formulierTitels">Email adres</label>
+                        <input class="inputField" name="email">
+                        <label class="formulierTitels">Bericht</label>
+                        <textarea class="inputFieldMessage" name="message"></textarea>
+                        <button type="submit" class="activateContact">Verzenden</button>
+                    </fieldset>
+                </form>
+            <footer class="footerMainText">&#9400; Melle Roffel 631287</footer>
+        </article>
+        
+    </body>
+    
+    
+    
+</html>

@@ -1,0 +1,14 @@
+haarlem-sport.nl
+mudo
+haarlem
+neighbourhood: Kleine-hout
+talen: NL, EN
+https://www.taekwon.nl/
+
+
+Hash:
+A hash - # within a hyperlink specifies an html element id to which the window should be scrolled.
+
+href="#some-id" would scroll to an element on the current page such as <div id="some-id">.
+
+href="//site.com/#some-id" would go to site.com and scroll to the id on that page.
