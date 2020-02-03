@@ -1,0 +1,205 @@
+@font-face {
+    font-family: RobotoRegular;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+html {
+    scroll-behavior: smooth
+}
+
+a, a:active, a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    margin-top: -3.25em; /* negatief omdat de background video margin aan de top toevoegte. */
+    background-color: #AAAAAA; /* kleur 1/7*/
+}
+
+/* content images styling */
+
+.contentImg {
+    width: 49.5%;
+    height: 40%;
+    margin-left: 0.2%;
+    -webkit-box-shadow: 0 0 10px black; /* box shadow alle kanten. */
+    box-shadow: 0 0 10px black; /* box shadow alle kanten. */
+}
+
+
+/* header styling */
+.pageHeader {
+    width: 100%;
+    height: 11em;
+    background-color: #ffffff; /* kleur 2/7*/
+    border-bottom: solid 0.2em black;
+    position: sticky;
+}
+
+.pageTitle {
+    color: black;
+    font-size: 4vw;
+    margin-left: 0.5em;
+    display: block;
+    font-family: RobotoRegular, Arial, Lato;
+}
+
+.payOffTitle {
+    color: black;
+    font-size: 1.2vw;
+    margin-top: -1.5em;
+    margin-left: 1.8em;
+    display: block;
+    font-family: RobotoRegular, Arial, Lato;
+}
+
+/* navigation bar styling */
+
+.menuBarWrapper {
+    width: 70%;
+    height: 100%;
+    float: right;
+}
+
+.unsortMenu {
+    list-style: none;
+}
+
+.navMenuItem {
+    float: inherit;
+    font-size: 2.4vh;
+    display: block;
+    font-family: RobotoRegular, Arial, Lato;
+    font-weight: bold;
+    color: #F5F5F5;
+    text-align: left;
+    width: 10em;
+    margin-bottom: 0.2em;
+    background-color: #2699FB; /* kleur 3/7 */
+    border-radius: 0.8em;
+    transition: 0.4s;
+}
+
+.navMenuItem:hover {
+    color: #000000; /* 4/7 */
+    padding-left: 0.4em;
+    padding-right: 0.4em;
+}
+
+.decoMenuItem {
+    background-color: inherit;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+/* end navigation bar styling. */
+/* end header styling. */
+
+/* basic content styling */
+
+#mainContent, #secondaryContent, #referalcontent, #contactcontent {
+    width: 60%;
+    height: auto;
+    margin-left: 20%;
+    background-color: #F5F5F5; /* kleur 5/7 */
+    -webkit-box-shadow: 0 0 10px black; /* box shadow alle kanten. */
+    box-shadow: 0 0 10px black; /* box shadow alle kanten. */
+}
+
+.contentTitle {
+    width: 100%;
+    text-align: center;
+    font-size: 1.4vw;
+    font-family: RobotoRegular, Arial, Lato;
+}
+
+.contentText {
+    font-size: 1vw;
+    text-align: center;
+    font-family: RobotoRegular, Arial, Lato;
+}
+
+/* end styling main content. */
+
+/* sport content styling */
+
+#Sport {
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 2em;
+    overflow: hidden;
+    background-color: #707070; /* kleur 6/7 */
+    -webkit-box-shadow: 0 0 10px black; /* box shadow alle kanten. */
+    box-shadow: 0 0 10px black; /* box shadow alle kanten. */
+}
+
+.sportClubsList {
+}
+
+.clubInfoText {
+    font-size: 0.8vw;
+    font-family: RobotoRegular, Arial, Lato;
+}
+
+.clubImage {
+    height: 8em;
+    width: 8em;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 1.8px 1.8px 10px black;
+}
+
+.sportsFooter {
+    font-size: 1vw;
+    text-align: center;
+    width: 100%;
+    margin-top: 1em;
+}
+
+/* end sport content styling */
+
+/* footer styling. */
+footer {
+    width: 98%;
+    background-color: #444444; /* kleur 7/7 */
+    font-size: 0.9vw;
+    padding-left: 2%;
+}
+
+/* background video style*/
+/* voor verschillende beeld ratio's zorgt ie ervoor dat t centered. Fixed position om bij t scrollen mee te gaan.*/
+.fullscreen-bg__video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -100;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .fullscreen-bg__video {
+        height: 300%;
+        top: -100%;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .fullscreen-bg__video {
+        width: 300%;
+        left: -100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .fullscreen-bg {
+        background: url('../img/videoframe.jpg') center center / cover no-repeat;
+    }
+
+    .fullscreen-bg__video {
+        display: none;
+    }
+}
